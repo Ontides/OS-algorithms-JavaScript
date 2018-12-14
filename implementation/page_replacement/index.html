@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三种页面置换算法的模拟</title>
+</head>
+<body>
+    <form name="form">
+        <div>
+            <label for="memoryBlock">输入内存块数</label>
+            <input type="number" id="memoryBlock" placeholder=""/>
+        </div>
+        <div>
+            <label for="option">选择置换算法</label>
+            <select name="option" id="option">
+                <option value="OPT">OPT</option>
+                <option value="FIFO">FIFO</option>
+                <option value="LRU">LRU</option>
+            </select>
+        </div>
+        <label for="instruction">请输入指令</label><br/>
+        <textarea id="instruction" style="width: 200px;height: 80px;"></textarea><br/>
+        <input type="button" value="确定" id="submit">
+    </form>
+</body>
+<script src="./page_replacement.js"></script>
+</html>
